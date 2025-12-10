@@ -35,7 +35,7 @@ public class UserInfoController {
     @FXML
     private ComboBox<String> departmentCombo;
 
-    private ToggleGroup roleToggleGroup;  // Manually created ToggleGroup
+    private ToggleGroup roleToggleGroup;
 
     @FXML
     public void initialize() {

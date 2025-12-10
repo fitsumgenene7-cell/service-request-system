@@ -73,6 +73,8 @@
                         onAction="#handleSubmit"
                         style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold;"
                         prefWidth="150" prefHeight="35"/>
+
+
             </HBox>
 
             <Label text="You will receive a confirmation email with your request ID"

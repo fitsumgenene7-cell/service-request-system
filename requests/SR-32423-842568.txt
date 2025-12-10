@@ -1,0 +1,30 @@
+f==================================================
+      UNIVERSITY SERVICE REQUEST SYSTEM
+==================================================
+
+REQUEST CONFIRMATION
+------------------------------
+Request ID: SR-32423-842568
+Submission Time: 2025-12-10 22:44:02
+
+USER INFORMATION
+------------------------------
+Name: akjjfhkjafj
+ID: 32423
+Role: Student
+Department: Chemical Engineering
+
+REQUEST DETAILS
+------------------------------
+Service Category: Facilities Maintenance (Repairs, Cleaning)
+Urgency Level: Low
+Status: Pending
+
+DESCRIPTION
+------------------------------
+afaaffaf
+
+==================================================
+Thank you for using our service system.
+Your request has been recorded.
+==================================================

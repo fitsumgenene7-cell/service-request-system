@@ -1,0 +1,24 @@
+=== UNIVERSITY SERVICE REQUEST ===
+Request ID: SR-21333-397351
+Generated: 2025-12-10 22:36:37
+========================================
+
+USER INFORMATION:
+----------------------------------------
+Name: Redu
+ID: 21333
+Role: Student
+Department: Information Technology
+
+REQUEST DETAILS:
+----------------------------------------
+Service Category: IT Support (Computer, Network, Software)
+Urgency Level: Medium
+Status: Pending
+
+DESCRIPTION:
+----------------------------------------
+lkjafljalj
+
+========================================
+Thank you for using University Service Request System

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.ServiceRequestController"
+            prefWidth="600" prefHeight="550">
+
+    <center>
+        <VBox spacing="20" alignment="TOP_CENTER">
+            <padding>
+                <Insets top="30" right="40" bottom="30" left="40"/>
+            </padding>
+
+            <Label text="Service Request Form"
+                   style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #2c3e50;"/>
+
+            <Separator prefWidth="500"/>
+
+            <!-- User Info Display -->
+            <GridPane hgap="10" vgap="8" style="-fx-background-color: #ecf0f1; -fx-padding: 15; -fx-border-color: #bdc3c7; -fx-border-radius: 5;">
+                <Label text="User Information:" style="-fx-font-weight: bold; -fx-text-fill: #2c3e50;" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+                <Label text="Name:" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+                <Label fx:id="displayName" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <Label text="ID:" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+                <Label fx:id="displayId" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <Label text="Role:" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+                <Label fx:id="displayRole" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                <Label text="Department:" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+                <Label fx:id="displayDepartment" style="-fx-font-weight: bold;" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+            </GridPane>
+
+            <!-- Service Request Form -->
+            <VBox spacing="15" alignment="TOP_LEFT">
+                <Label text="Service Category:" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+
+                <ComboBox fx:id="serviceCategoryCombo"
+                          promptText="Select service category"
+                          prefWidth="400"/>
+
+                <Label text="Issue Description:" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+
+                <TextArea fx:id="descriptionArea"
+                          promptText="Describe your issue or request in detail..."
+                          prefWidth="400"
+                          prefRowCount="6"
+                          wrapText="true"/>
+
+                <Label text="Urgency Level:" style="-fx-font-size: 14px; -fx-font-weight: bold;"/>
+
+                <HBox spacing="20">
+                    <RadioButton fx:id="lowRadioButton" text="Low"/>
+                    <RadioButton fx:id="mediumRadioButton" text="Medium"/>
+                    <RadioButton fx:id="highRadioButton" text="High"/>
+                    <RadioButton fx:id="criticalRadioButton" text="Critical"/>
+                </HBox>
+            </VBox>
+
+            <!-- Action Buttons -->
+            <HBox spacing="20" alignment="CENTER">
+                <Button text="⬅ Back"
+                        onAction="#handleBack"
+                        style="-fx-background-color: #95a5a6; -fx-text-fill: white;"
+                        prefWidth="100" prefHeight="35"/>
+
+                <Button text="Submit Request"
+                        onAction="#handleSubmit"
+                        style="-fx-background-color: #2ecc71; -fx-text-fill: white; -fx-font-weight: bold;"
+                        prefWidth="150" prefHeight="35"/>
+            </HBox>
+
+            <Label text="You will receive a confirmation email with your request ID"
+                   style="-fx-font-size: 11px; -fx-text-fill: #7f8c8d;"/>
+        </VBox>
+    </center>
+
+</BorderPane>
